@@ -27,12 +27,21 @@ int maximo(int x, int y)
 }
 int main()
 {
-    int a,b;
-    a=2;
-    b=4;
-    if(maximo(b,a)==1)
+    int x,y;
+    x=15;
+    y=26;
+    if(maximo(y,x)==1)
     {
-        printf("faw");
+        int a,b,c;
+        a=0;
+        b=1;
+        while()
+        {
+            c=y/x;
+            a=b;
+            b=modulo(a-b(c),y);
+
+        }
     }
     else
     {
