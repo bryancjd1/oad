@@ -14,6 +14,7 @@ int main()
     int array[100],i,j,k;
     int numeros;
     int *p=array;
+    int *q;
     int length=5;
     for(i=0;i<5;i++)
     {
@@ -21,15 +22,17 @@ int main()
         *(p+i)=numeros;
     }
     p=array;
-    for(i=0;i<5;i++)
+    q=array;
+    for(i=0;i<4;i++)
     {
-        for(j=0;j<5-i;j++)
+        for(j=0;j<4-i;j++)
         {
-            if(*(p+j)>*(p+j+1))
+            if(*(p++)>*(p+1))
             {
-                swap((p+j),(p+j+1));
+                swap((p-1),p);
             }
         }
+        p=q;
     }
     p=array;
     for(i=0;i<5;i++)
