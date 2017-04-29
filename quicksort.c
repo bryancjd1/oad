@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+void quicksort(int *arr, int izq, int der);
 void swap(int *a, int *b)
 {
     int c;
@@ -28,24 +28,30 @@ int main()
 
 void quicksort(int *arr, int izq, int der)
 {
-    int pivote, i, j;
+    int *pivote, i, j;
+    int *inicio=arr;
+    int *s=arr+der;
+    pivote=arr+izq;
     if(izq<der)
     {
-        pivote=izq;
         i=izq;
         j=der;
         while(i<j)
         {
-            while(*(arr+i)<=*(arr+pivote)&& i<=der)
+            while(*(arr++)<=*pivote&& i<=der)
                 i++;
-            while(*(arr+j)>*(arr+pivote)&& j>=izq)
+            while(*(s--)>*pivote&& j>=izq)
                 j--;
             if(i<j)
             {
-                swap((arr+i),(arr+j));
+                swap((arr-1),(s+1));
             }
+            arr--;
+            s++;
+
         }
-        swap((arr+j),(arr+pivote));
+        swap(s,pivote);
+        arr=inicio;
 
         quicksort(arr, izq, j-1);
         quicksort(arr, j+1, der);
