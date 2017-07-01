@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1498934729 source:c:\users\gonzalo\desktop\functor\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+

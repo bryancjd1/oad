@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1498809151 source:c:\users\gonzalo\desktop\puzzle\main.cpp
+	<iostream>
+	<stdlib.h>
+	<ctime>
+

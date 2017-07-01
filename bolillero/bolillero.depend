@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1498944686 source:c:\users\gonzalo\desktop\bolillero\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

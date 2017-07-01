@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1498937476 source:c:\users\gonzalo\desktop\dado\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
